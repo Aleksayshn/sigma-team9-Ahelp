@@ -1,4 +1,4 @@
-import { Main, Wrapper, Goals, Works, TypeWorks, CardsBlocks, CardsBlockImg } from './HistoryPage.styled';
+import { Main, Goals, Works, TypeWorks, CardsBlocks, CardsBlockImg } from './HistoryPage.styled';
 
 import {
   Container,

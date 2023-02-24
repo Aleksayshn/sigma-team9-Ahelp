@@ -3,12 +3,6 @@ import styled from 'styled-components';
 export const Main = styled.main`
 `;
 
-export const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-`;
 
 export const Goals = styled.div`
   padding-top: 138px;
@@ -62,35 +56,4 @@ export const CardsBlocks = styled.div`
 
 export const CardsBlockImg = styled.div`
 margin-bottom: 20px;
-`;
-
-const ThirdBlockWrapper = styled.div`
-  margin-top: 80px;
-
-  & > h2 {
-    font-size: 40px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-
-  & > span {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 20px;
-    display: block;
-  }
-
-
-  & > .OurGoal__third-block__img-wrap {
-    margin-top: 40px;
-
-    & > img {
-      width: 100%;
-      height: auto;
-    }
-  }
-
-
-
-
 `;

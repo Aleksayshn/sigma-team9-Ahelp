@@ -2,14 +2,14 @@ import React, { useState, useEffect } from 'react';
 import FormPopap from './FormPopap';
 import one from 'image/support1.png';
 
-const sendForm = () => {
-  const supportForm = document.querySelector('.support__form')
+// const sendForm = () => {
+//   const supportForm = document.querySelector('.support__form')
 
-  supportForm.addEventListener('submit', e => {
-    e.preventDefault();
-  })
+//   supportForm.addEventListener('submit', e => {
+//     e.preventDefault();
+//   })
 
-}
+// }
 
 function Support() {
   const [isModalOpen, setModalOpen] = useState(false);

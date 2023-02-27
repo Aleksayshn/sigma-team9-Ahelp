@@ -79,11 +79,12 @@ function But() {
   const [textInput, setTextInput] = useState("");
   const [isFormValid, setIsFormValid] = useState(false);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (formChange) {
       validateForm();
     }
-  }, [formChange, option1, option2, textInput]);
+  }, [option1, option2, textInput]);
 
   const handleOption1Change = (parameter) => {
     setOption1(prevParameter => parameter);

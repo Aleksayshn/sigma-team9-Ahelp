@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 
 import ButtonFunc from './ButtonFunc';
 import one from 'icons/help2.svg';
@@ -79,12 +79,20 @@ function But() {
   const [textInput, setTextInput] = useState("");
   const [isFormValid, setIsFormValid] = useState(false);
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const validateForm = useCallback(() => {
+    setFormChanged(prevChanged => true);
+    if (option1 === "" || (option2 === "" && textInput === "")) {
+      setIsFormValid(prevValidated => false);
+    } else {
+      setIsFormValid(prevValidated => true);
+    }
+  }, [option1, option2, textInput]);
+
   useEffect(() => {
     if (formChange) {
       validateForm();
     }
-  }, [formChange, validateForm, option1, option2, textInput]);
+  }, [formChange, validateForm]);
 
   const handleOption1Change = (parameter) => {
     setOption1(prevParameter => parameter);
@@ -97,15 +105,6 @@ function But() {
   const handleTextInputChange = (e) => {
     setTextInput(prevParameter => e.target.value);
     setFormChanged(prevChanged => true);
-  };
-
-  const validateForm = () => {
-    setFormChanged(prevChanged => true);
-    if (option1 === "" || (option2 === "" && textInput === "")) {
-      setIsFormValid(prevValidated => false);
-    } else {
-      setIsFormValid(prevValidated => true);
-    }
   };
 
   const moneyCounts = money[pageState[0]];

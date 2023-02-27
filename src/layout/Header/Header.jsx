@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import { routes } from 'utils/routes';
 import logo from '../../utils/logo.png';
+import ButtonFunc from '../../components/ButtonFunc';
 
-import { HeaderStyled, Container, Logo, Nav, MenuLink, PrimeryBtn, DropMenu, DropdownMenu, DropMenuItem } from './Header.styled';
+
+import { HeaderStyled, Container, Logo, Nav, MenuLink, DropMenu, DropdownMenu, DropMenuItem } from './Header.styled';
 
 export const Header = () => {
   const [isProjectsMenuOpen, setIsProjectsMenuOpen] = useState(false);
@@ -28,8 +30,8 @@ export const Header = () => {
             {isAboutMenuOpen && (
               <DropdownMenu>
                 <DropMenuItem to={routes.HISTORY}>Мета та історія фонду</DropMenuItem>
-                <DropMenuItem to={routes.HISTORY}>Команда та партнери</DropMenuItem>
-                <DropMenuItem to={routes.HISTORY}>Документація та звітність</DropMenuItem>
+                <DropMenuItem to={routes.TEAM}>Команда та партнери</DropMenuItem>
+                <DropMenuItem to={routes.DOCS}>Документація та звітність</DropMenuItem>
               </DropdownMenu>
             )}
           </DropMenu>
@@ -37,14 +39,18 @@ export const Header = () => {
             <div onClick={handleProjectsMenuToggle} onFocus={() => null}>Проєкти</div>
             {isProjectsMenuOpen && (
               <DropdownMenu>
-                <DropMenuItem to={routes.HISTORY}>Поточні потреби</DropMenuItem>
-                <DropMenuItem to={routes.HISTORY}>Успішні історії</DropMenuItem>
+                <DropMenuItem to={routes.CURRENT}>Поточні потреби</DropMenuItem>
+                <DropMenuItem to={routes.SUCCESS}>Успішні історії</DropMenuItem>
               </DropdownMenu>
             )}
           </DropMenu>
-          <MenuLink to={routes.HISTORY}>Контакти</MenuLink>
+          <MenuLink to={routes.CONTACTS}>Контакти</MenuLink>
         </Nav>
-        <PrimeryBtn to={routes.HISTORY}>Допомогти</PrimeryBtn>
+        <a href="#button_help">
+          <ButtonFunc class="hero-button">
+            Допомогти
+          </ButtonFunc>
+        </a>
       </Container>
     </HeaderStyled>
   );

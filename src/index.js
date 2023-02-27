@@ -16,3 +16,4 @@ root.render(
   </StrictMode>
 );
 
+// basename = "/sigma-team9-Ahelp/"

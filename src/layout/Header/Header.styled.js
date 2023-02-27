@@ -44,14 +44,12 @@ export const PrimeryBtn = styled(Link)`
   align-items: center;
   justify-content: center;
   background: #ffd966;
-  width: 142px;
-  height: 43px;
-  margin-left: 10px;
+  height: auto;
   padding-bottom: 12px;
   padding-top: 12px;
   padding-left: 24px;
   padding-right: 24px;
-  color: #000000;
+  color: #000;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover:not(.active),
   :focus:not(.active) {
@@ -71,14 +69,14 @@ export const Nav = styled.nav`
 
 export const MenuLink = styled(Link)`
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  color: #FFF;
+  color: #fff;
   &.active {
     color: #FFD966;
   }
 
   &:hover:not(.active),
   &:focus:not(.active) {
-    color: #FFF;
+    color: #FFD966;
   }
 `;
 
@@ -107,7 +105,6 @@ export const DropMenu = styled.div`
 export const DropMenuItem = styled(Link)`
   display: block;
   padding: 10px;
-  background-color: #FFFFFF;
   text-decoration: none;
   color: #000;
   border: 1px solid #e5e5e5;
@@ -124,6 +121,7 @@ export const DropdownMenu = styled.div`
   z-index: 1;
   opacity: 0;
   background-color: #f9f9f9;
+  color: #000;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   ${DropMenu}:hover & {

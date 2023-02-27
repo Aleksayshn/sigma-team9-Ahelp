@@ -5,5 +5,4 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
   margin-top: 24px;
-
 `;

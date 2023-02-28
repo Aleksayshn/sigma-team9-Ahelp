@@ -3,7 +3,7 @@ import ButtonFunc from './ButtonFunc';
 import CurrentSwiper from './CurrentSwiper';
 import SuccessfulStoriesPopap from './SuccessfulStoriesPopap';
 import { Link } from 'react-router-dom';
-import one from 'icons/3.svg';
+import one from 'image/child.jpg';
 import two from 'image/cur4.jpg';
 import three from 'image/cur2.jpg';
 

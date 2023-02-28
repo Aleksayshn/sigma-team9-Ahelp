@@ -3,11 +3,11 @@ import { useState } from 'react';
 import ButtonFunc from './ButtonFunc';
 import CurrentNeedsPopap from './CurrentNeedsPopap';
 import { Link } from "react-router-dom";
-import one from '../image/cur1.jpg';
-import two from '../image/cur2.jpg';
-import three from '../image/cur3.jpg';
-import four from '../image/cur4.jpg';
-import five from '../icons/3.svg';
+import one from 'image/cur1.jpg';
+import two from 'image/cur2.jpg';
+import three from 'image/cur3.jpg';
+import four from 'image/cur4.jpg';
+import five from 'icons/3.svg';
 
 
 function CurrentNeeds() {

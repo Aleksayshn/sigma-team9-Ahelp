@@ -30,7 +30,7 @@ function Slider() {
         </SwiperSlide>
         <SwiperSlide>
           <div className="successful-popap-swiper__card-block">
-            <img src={two} alt="1" />
+            <img src={two} alt="11" />
           </div>
         </SwiperSlide>
         <SwiperSlide>

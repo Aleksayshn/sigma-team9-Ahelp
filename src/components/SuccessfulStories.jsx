@@ -18,7 +18,7 @@ function SuccessfulStories() {
   const stories = [
     {
       id: 227,
-      image: "image/animal.jpg",
+      image: 'image/animal.jpg',
       title: 'Подарунки до дітей на новорічні свята',
       description: `Наш фонд зібрав подарунки до новорічних свят для дітей - солодощі із Польщі та
     Німеччини, канцтовари,іграшки з різних міст України.`,
